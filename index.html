@@ -40,7 +40,6 @@
         .skills-right {
             padding-left: 36px;
         }
-        /* SKILL BAR: MAKE IT SMALLER */
         .skill-bar-text {
             font-size: 0.75rem !important;
             padding: 2px 0 !important;
@@ -62,7 +61,6 @@
     </style>
 </head>
 <body>
-    <!-- Music Button & Audio (toggle play/pause) -->
     <div style="position:fixed;bottom:32px;right:32px;z-index:999;">
         <button 
             id="musicBtn"
@@ -82,24 +80,29 @@
         </button>
     </div>
     <audio id="bgAudio" src="music/bgm.mp3" loop></audio>
-    
-    <!-- Navigation Bar -->
-    <nav style="width: 100%; background: linear-gradient(90deg, #5f2c82 0%, #49a09d 100%); padding: 0; box-shadow: 0 4px 16px #49a09d33; display: flex; justify-content: center; align-items: center; position: sticky; top: 0; z-index: 100;">
+    <nav style="width: 100%; background: linear-gradient(90deg, #5f2c82 0%, #49a09d 100%); padding: 0; box-shadow: 0 4px 16px #49a09d33; 
+		display: flex; justify-content: center; align-items: center; position: sticky; top: 0; z-index: 100;">
         <div style="max-width: 900px; width:100%; display:flex; align-items:center;">
             <div style="padding: 0 24px; flex-shrink:0;"></div>
             <div style="display: flex; gap: 8px; margin-left: auto; padding-right:18px;">
-                <a href="index.html" style="padding: 12px 20px; color: #5f2c82; background: #ffd200; text-decoration: none; border-radius: 9px; font-weight: 800; font-size:1rem; box-shadow: 0 1px 6px #ffd20033;"><i class="fa-solid fa-house" style="margin-right:5px;"></i>Home</a>
-                <a href="education.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; font-size:1rem;"><i class="fa-solid fa-graduation-cap" style="margin-right:5px;"></i>Education</a>
-                <a href="experience.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; font-size:1rem;"><i class="fa-solid fa-briefcase" style="margin-right:5px;"></i>Experience</a>
-                <a href="interest.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; font-size:1rem;"><i class="fa-solid fa-star" style="margin-right:5px;"></i>Interest</a>
-                <a href="aboutme.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; font-size:1rem;"><i class="fa-solid fa-envelope" style="margin-right:5px;"></i>About Me</a>
-                <a href="feedback.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; font-size:1rem;"><i class="fa-solid fa-comment-dots" style="margin-right:5px;"></i>Feedback</a>
+                <a href="index.html" style="padding: 12px 20px; color: #5f2c82; background: #ffd200; text-decoration: none; border-radius: 9px; 
+			font-weight: 800; font-size:1rem; box-shadow: 0 1px 6px #ffd20033;"><i class="fa-solid fa-house" style="margin-right:5px;"></i>Home</a>
+                <a href="education.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; 
+			font-size:1rem;"><i class="fa-solid fa-graduation-cap" style="margin-right:5px;"></i>Education</a>
+                <a href="experience.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; 
+			font-size:1rem;"><i class="fa-solid fa-briefcase" style="margin-right:5px;"></i>Experience</a>
+                <a href="interest.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; 
+			font-size:1rem;"><i class="fa-solid fa-star" style="margin-right:5px;"></i>Interest</a>
+                <a href="aboutme.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; 
+			font-size:1rem;"><i class="fa-solid fa-envelope" style="margin-right:5px;"></i>About Me</a>
+                <a href="feedback.html" style="padding: 12px 20px; color: #fff; text-decoration: none; border-radius: 9px; font-weight: 600; 
+			font-size:1rem;"><i class="fa-solid fa-comment-dots" style="margin-right:5px;"></i>Feedback</a>
             </div>
         </div>
     </nav>
-
-    <!-- HEADER -->
-    <header style="background: linear-gradient(rgba(95,44,130,0.75), rgba(76,201,240,0.40)), url('image/banner.png') center/cover no-repeat; padding: 24px 0 16px 0; color: #fff; text-align: center; box-shadow: 0 6px 20px rgba(76,201,240,0.13); border-radius: 0 0 32px 32px; min-height: 150px;">
+    <header style="background: linear-gradient(rgba(95,44,130,0.75), rgba(76,201,240,0.40)), url('image/banner.png') 
+            center/cover no-repeat; padding: 24px 0 16px 0; color: #fff; text-align: center; box-shadow: 0 6px 20px rgba(76,201,240,0.13); 
+            border-radius: 0 0 32px 32px; min-height: 150px;">
         <h1 style="margin: 0; font-size: 2.5rem; letter-spacing: 2px; font-weight: 700; color: #ffd200; text-shadow: 2px 2px 16px #5f2c82;">
             Hello! Welcome to Muhammad Sulaiman Portfolio!
         </h1>
@@ -107,10 +110,7 @@
             IMS458
         </p>
     </header>
-
-    <!-- SIDE-BY-SIDE MAIN CONTENT -->
     <div class="side-by-side-container">
-        <!-- LEFT: Profile/Welcome/About Me -->
         <div class="profile-left">
             <img src="image/indexpic2.jpg" 
                  alt="Profile Photo" 
@@ -120,61 +120,68 @@
                 IT Student | IT Support | Creative Thinker
             </p>
             <p style="font-size: 1.09rem; color: #333; text-align:justify;">
-                I’m Muhammad Sulaiman, an Information Systems Management student with a passion for technology and problem-solving. Here, you’ll find highlights of my journey, skills, and the work I do as an IT Support Engineer and digital marketer. I believe in lifelong learning and helping others grow. Feel free to explore, get inspired, and discover new possibilities with me!
+                I’m Muhammad Sulaiman, an Information Systems Management student with a passion for technology and problem-solving. 
+                Here, you’ll find highlights of my journey, skills, and the work I do as an IT Support Engineer and digital marketer. 
+                I believe in lifelong learning and helping others grow. Feel free to explore, get inspired, and discover new possibilities with me!
             </p>
         </div>
-        <!-- RIGHT: Skills -->
         <div class="skills-right">
             <h2 style="color: #5f2c82; font-size: 2rem; font-weight: 700; margin-bottom: 20px; text-align:center;">
                 <i class="fa-solid fa-laptop" style="color: #ffd200; margin-right: 10px;"></i>
                 My Skillset
             </h2>
-            <!-- Technical Skills as Bars -->
-            <div style="background: linear-gradient(90deg, #49a09d11 0%, #ffd20009 100%); border-radius:20px; margin-bottom:25px; padding:22px 24px; box-shadow: 0 2px 10px #49a09d20;">
+            <div style="background: linear-gradient(90deg, #49a09d11 0%, #ffd20009 100%); border-radius:20px; 
+                        margin-bottom:25px; padding:22px 24px; box-shadow: 0 2px 10px #49a09d20;">
                 <h3 style="margin:0 0 10px 0; font-size:1.2rem; color:#f7971e;">
                     <i class="fa-solid fa-gears" style="color:#5f2c82; margin-right:7px;"></i> Skills
                 </h3>
                 <div style="margin-bottom:16px;">
                     <span style="font-weight:600;">PC & Laptop Troubleshooting</span>
                     <div style="background:#eee; border-radius: 12px; overflow: hidden; margin-top: 5px;">
-                        <div class="skill-bar-text" style="width: 92%; background:linear-gradient(90deg,#ffd200 70%,#5f2c82); text-align:center; color:#222; font-weight:700;">92%</div>
+                        <div class="skill-bar-text" style="width: 92%; background:linear-gradient(90deg,#ffd200 70%,#5f2c82); 
+                                    text-align:center; color:#222; font-weight:700;">92%</div>
                     </div>
                 </div>
                 <div style="margin-bottom:16px;">
                     <span style="font-weight:600;">Microsoft Office</span>
                     <div style="background:#eee; border-radius: 12px; overflow: hidden; margin-top: 5px;">
-                        <div class="skill-bar-text" style="width: 88%; background:linear-gradient(90deg,#ffd200 80%,#49a09d); text-align:center; color:#222; font-weight:700;">88%</div>
+                        <div class="skill-bar-text" style="width: 88%; background:linear-gradient(90deg,#ffd200 80%,#49a09d); 
+                                    text-align:center; color:#222; font-weight:700;">88%</div>
                     </div>
                 </div>
                 <div style="margin-bottom:16px;">
                     <span style="font-weight:600;">Basic Database Management</span>
                     <div style="background:#eee; border-radius: 12px; overflow: hidden; margin-top: 5px;">
-                        <div class="skill-bar-text" style="width: 68%; background:linear-gradient(90deg,#ffd200 50%,#49a09d); text-align:center; color:#222; font-weight:700;">68%</div>
+                        <div class="skill-bar-text" style="width: 68%; background:linear-gradient(90deg,#ffd200 50%,#49a09d); 
+                                    text-align:center; color:#222; font-weight:700;">68%</div>
                     </div>
                 </div>
                 <div style="margin-bottom:16px;">
                     <span style="font-weight:600;">Basic HTML</span>
                     <div style="background:#eee; border-radius: 12px; overflow: hidden; margin-top: 5px;">
-                        <div class="skill-bar-text" style="width: 60%; background:linear-gradient(90deg,#ffd200 60%,#5f2c82); text-align:center; color:#222; font-weight:700;">60%</div>
+                        <div class="skill-bar-text" style="width: 60%; background:linear-gradient(90deg,#ffd200 60%,#5f2c82); 
+                                    text-align:center; color:#222; font-weight:700;">60%</div>
                     </div>
                 </div>
                                 <div style="margin-bottom:16px;">
                     <span style="font-weight:600;">CSS</span>
                     <div style="background:#eee; border-radius: 12px; overflow: hidden; margin-top: 5px;">
-                        <div class="skill-bar-text" style="width: 60%; background:linear-gradient(90deg,#ffd200 40%,#5f2c82); text-align:center; color:#222; font-weight:700;">60%</div>
+                        <div class="skill-bar-text" style="width: 60%; background:linear-gradient(90deg,#ffd200 40%,#5f2c82); 
+                                    text-align:center; color:#222; font-weight:700;">60%</div>
                     </div>
                 </div>
                 <div style="margin-bottom:16px;">
                     <span style="font-weight:600;">Brand Awareness</span>
                     <div style="background:#eee; border-radius: 12px; overflow: hidden; margin-top: 5px;">
-                        <div class="skill-bar-text" style="width: 80%; background:linear-gradient(90deg,#49a09d 80%,#ffd200); text-align:center; color:#222; font-weight:700;">80%</div>
+                        <div class="skill-bar-text" style="width: 80%; background:linear-gradient(90deg,#49a09d 80%,#ffd200); 
+                                    text-align:center; color:#222; font-weight:700;">80%</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-<footer style="background: linear-gradient(90deg, #5f2c82 0%, #49a09d 100%); padding: 32px 0 16px; color: #fff; margin-top: 40px; border-radius: 0 0 32px 32px; box-shadow: 0 -2px 24px #5f2c8230; text-align: center; ">
+<footer style="background: linear-gradient(90deg, #5f2c82 0%, #49a09d 100%); padding: 32px 0 16px; color: #fff; margin-top: 40px; 
+            border-radius: 0 0 32px 32px; box-shadow: 0 -2px 24px #5f2c8230; text-align: center; ">
     <div style="margin-bottom: 18px;">
     <a href="https://www.instagram.com/lumyn97/" target="_blank" style="margin: 0 10px;">
   <img src="image/instagram.png" width="40" title="Instagram" style="vertical-align:middle; border-radius:50%; box-shadow:0 2px 12px #3333;">
@@ -196,5 +203,4 @@
       <b>This website is for educational purposes (IMS458)</b>
     </p>
 </footer>
-
 </html>
